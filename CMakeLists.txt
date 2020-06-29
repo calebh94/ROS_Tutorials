@@ -18,7 +18,7 @@ add_message_files(DIRECTORY msg FILES Score.msg)
 generate_messages(DEPENDENCIES std_msgs)
 
 catkin_package(
-        INCLUDE_DIRS include
+        INCLUDE_DIRS
         LIBRARIES
         CATKIN_DEPENDS roscpp std_msgs sensor_msgs message_runtime
 )
