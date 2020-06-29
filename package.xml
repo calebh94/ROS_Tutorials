@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>ROS_Tutorials</name>
+    <version>0.1.0</version>
+    <description>Some basic ROS tutorials</description>
+
+    <maintainer email="harris.caleb84@gmail.com">Caleb Harris</maintainer>
+    <license>None</license>
+    <url type="website">https://calebh94.github.io/</url>
+    <author email="harris.caleb84@gmail.com">Caleb Harris</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roscpp</build_depend>
+    <build_depend>std_msgs</build_depend>
+    <build_depend>sensor_msgs</build_depend>
+
+
+    <exec_depend>roscpp</exec_depend>
+    <exec_depend>std_msgs</exec_depend>
+    <exec_depend>sensor_msgs</exec_depend>
+
+
+</package>
