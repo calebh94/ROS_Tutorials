@@ -24,12 +24,19 @@ catkin_package(
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
+
 add_executable(publisher_node src/publisher_example.cpp)
 target_link_libraries(publisher_node ${catkin_LIBRARIES})
 add_dependencies(publisher_node ${${PROJECT_NAME}_EXPORTED_TARGETS})
+
 add_executable(subscriber_node src/subscriber_example.cpp)
 target_link_libraries(subscriber_node ${catkin_LIBRARIES})
 add_dependencies(subscriber_node ${${PROJECT_NAME}_EXPORTED_TARGETS})
+
+add_executable(pub_sub_node src/sub_and_pub_example.cpp)
+target_link_libraries(pub_sub_node ${catkin_LIBRARIES})
+add_dependencies(pub_sub_node ${${PROJECT_NAME}_EXPORTED_TARGETS})
+
 
 
 ## Header files to include
