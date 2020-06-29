@@ -1,0 +1,15 @@
+<launch>
+  <!-- a basic listener node -->
+  <node name="publisher_node" pkg="ros_tutorials" type="publisher_node" />
+  <!-- pass args to the listener node -->
+  <node name="subscriber_node" pkg="ros_tutorials" type="subscriber_node" />
+  <group ns="collins">
+    <node name="publisher_node" pkg="ros_tutorials" type="publisher_node">
+        <remap from="score" to="points"/>
+    </node>
+    <node name="subscriber_node" pkg="ros_tutorials" type="subscriber_node">
+        <remap from="score" to="points"/>
+    </node>
+
+  </group>
+</launch>
